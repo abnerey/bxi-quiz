@@ -9,12 +9,16 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { environment } from '../environments/environment';
 import { ClientInformationService } from './shared/services/client-information.service';
 import { SidebarComponent } from './sidebar/sidebar.component';
+import { WelcomeMessageComponent } from './welcome-message/welcome-message.component';
+import { TerTransferComponent } from './transactions/ter-transfer/ter-transfer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavBarComponent,
-    SidebarComponent
+    SidebarComponent,
+    WelcomeMessageComponent,
+    TerTransferComponent
   ],
   imports: [
     BrowserModule,

@@ -3,4 +3,5 @@ export class ClientInformation {
     name: string;
     surname: string;
     photo: string;
+    balance: number;
 }

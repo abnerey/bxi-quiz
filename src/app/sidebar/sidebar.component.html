@@ -1,10 +1,10 @@
 <div class="user-sidebar">
   <div class="card">
-    <div class="card-body">
+    <div class="card-body user-card-body">
       <div class="row sidebar-row">
-        <div class="col-lg-12 card-header">
+        <div class="col-lg-12 card-user-header">
           <div *ngIf="clientInformation && clientInformation.photo">
-            <div class="row">
+            <div class="row header-row">
               <div class="col-lg-5">
                 <img src="{{clientInformation.photo}}" class="img-thumbnail avatar">
               </div>
@@ -24,9 +24,74 @@
           </div>
         </div>
         <div class="col-lg-12 card-footer">
-
+          <span>Su saldo total es:</span>
+          <span class="balance">
+            {{clientInformation?.balance}}
+          </span>
+          <span class="currency">USD</span>
         </div>
       </div>
     </div>
+  </div>
+
+  <div class="card">
+    <ul class="list-group list-group-flush menu">
+      <li class="list-group-item selected">
+        <fa-icon [icon]="faThLarge" style="margin-right: 18px;"></fa-icon>
+        Dashboard
+      </li>
+      <li class="list-group-item">
+        <fa-icon [icon]="faHandHoldingUsd"></fa-icon>
+        <div class="btn">
+          Balance General
+        </div>
+        <fa-icon [icon]="faSortDown"></fa-icon>
+      </li>
+      <li class="list-group-item">
+        <fa-icon [icon]="faExchangeAlt"></fa-icon>
+        <div class="btn">
+          Transacciones
+        </div>
+        <fa-icon [icon]="faSortDown"></fa-icon>
+      </li>
+      <li class="list-group-item">
+        <fa-icon [icon]="faCreditCard"></fa-icon>
+        <div class="btn">
+          Tarjetas
+        </div>
+        <fa-icon [icon]="faSortDown"></fa-icon>
+      </li>
+      <li class="list-group-item">
+        <span class="credits-icon">
+          <fa-icon [icon]="faDollarSign"></fa-icon>
+        </span>
+        <div class="btn">
+          Créditos
+        </div>
+        <fa-icon [icon]="faSortDown"></fa-icon>
+      </li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <ul class="list-group list-group-flush menu">
+      <li class="list-group-item">
+        <fa-icon [icon]="faPhone"></fa-icon>
+        <div class="btn">
+          Contáctanos
+        </div>
+      </li>
+      <li class="list-group-item">
+        <fa-icon [icon]="faQuestionCircle"></fa-icon>
+        <div class="btn">
+          Ayuda
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <div class="legal">
+    Online Banking ha sido creada por
+    I4T. Todos los derechos reservados.
   </div>
 </div>
