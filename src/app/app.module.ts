@@ -8,11 +8,13 @@ import { AppComponent } from './app.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { environment } from '../environments/environment';
 import { ClientInformationService } from './shared/services/client-information.service';
+import { SidebarComponent } from './sidebar/sidebar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavBarComponent
+    NavBarComponent,
+    SidebarComponent
   ],
   imports: [
     BrowserModule,
