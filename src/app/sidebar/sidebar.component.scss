@@ -79,24 +79,6 @@ $primary-color: rgb(0, 89, 147);
     background-color: $primary-color;
 }
 
-.menu {
-    color: $primary-color;
-
-    .btn {
-        width: 150px;
-        text-align: left;
-    }
-
-    fa-icon {
-        margin-right: 9px;
-    }
-
-    .credits-icon {
-        margin-right: 4px;
-        margin-left: 5px;
-    }
-}
-
 .legal {
     color: $primary-color;
     margin-top: 10px;

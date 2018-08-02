@@ -11,6 +11,7 @@ import { ClientInformationService } from './shared/services/client-information.s
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { WelcomeMessageComponent } from './welcome-message/welcome-message.component';
 import { TerTransferComponent } from './transactions/ter-transfer/ter-transfer.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -22,9 +23,11 @@ import { TerTransferComponent } from './transactions/ter-transfer/ter-transfer.c
   ],
   imports: [
     BrowserModule,
+    FormsModule,
+    ReactiveFormsModule,
     FontAwesomeModule,
     AngularFireModule.initializeApp(environment.config),
-    AngularFirestoreModule,
+    AngularFirestoreModule
   ],
   providers: [
     ClientInformationService

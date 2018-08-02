@@ -1,4 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
+$primary-color: rgb(0, 89, 147);
+
 body {
     background-color: #f3f3f3 !important;
 }
@@ -27,4 +29,22 @@ body {
 
 .text-right {
     text-align: right;
+}
+
+.menu {
+    color: $primary-color;
+
+    .btn {
+        width: 150px;
+        text-align: left;
+    }
+
+    fa-icon {
+        margin-right: 9px;
+    }
+
+    .credits-icon {
+        margin-right: 4px;
+        margin-left: 5px;
+    }
 }
